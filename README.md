@@ -2,7 +2,7 @@
 
 ## Make Two Project 
  #### 1. Heart-Disease-Project
- # 2. Predicting The Sale Price of Bulozers (Regression)
+ #### 2. Predicting The Sale Price of Bulozers (Regression)
 
  #  1. Heart-Disease Project  (Based on Classification Model )Details
  
@@ -93,4 +93,4 @@ This is where you'll get different information about each of the featurein your 
 ## 5. Modeling
 
 ------------------------------------------------------------------------------------
-
+# 2. (Regression Model)
