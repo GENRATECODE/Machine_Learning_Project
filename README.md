@@ -93,4 +93,50 @@ This is where you'll get different information about each of the featurein your 
 ## 5. Modeling
 
 ------------------------------------------------------------------------------------
-# 2. (Regression Model)
+# 2. #  Structured Data Project 2: predicting the sale price of Buldozers (Regression Model)
+# 🚜 Predicting the Sales Price of Bulldozers using Machine Learning 
+
+In This notebook, we're going to go  through an example Machine Learning project with the goal of predicting the sale price of bulldozers.
+
+## 1. Problem Defition 
+
+>Predict the auction sale price for a piece of heavy equipment to create a "blue book" for bulldozers.
+> How well can we predict the future sale price of a Bulldozer, given its characteristics and previous examples of how much similar bulldozers have been sold for?
+
+
+## 2. Data 
+
+The data is downloaded from the kaggle bluebook for Bulldozers competition:
+you are predicting the sale price of bulldozers sold at auctions.
+
+There are Three main Datasets:https://www.kaggle.com/competitions/bluebook-for-bulldozers/data
+
+The data for this competition is split into three parts:
+
+   * Train.csv is the training set, which contains data through the end of 2011.
+   * Valid.csv is the validation set, which contains data from January 1, 2012 - April 30, 2012 You make predictions on this set throughout the majority of the competition. Your score on this set is used to create the public leaderboard.
+   * Test.csv is the test set, which won't be released until the last week of the competition. It contains data from May 1, 2012 - November 2012. Your score on the test set determines your final rank for the competition.
+
+The key fields are in train.csv are:
+
+    SalesID: the uniue identifier of the sale
+    MachineID: the unique identifier of a machine.  A machine can be sold multiple times
+    saleprice: what the machine sold for at auction (only provided in train.csv)
+    saledate: the date of the sale
+
+
+## 3. Evaluation 
+
+The evaluation metric for this competition is the RMSLE (root mean squared log error) between the actual and predicted auction prices.
+
+for more on the evaluation of this project check: https://www.kaggle.com/competitions/bluebook-for-bulldozers/overview/evaluation
+
+**Note:** The Goal for most regression evaluation metrics is to minimize to error. For example, our goal for this project will be to build a   machine learning model which minimises RMSLE.
+
+
+## 4. Features
+
+Kaggel Provides a data dictionary detailing all of the features of the datasets. You can view this datadictionary on google sheet:https://docs.google.com/spreadsheets/d/18ly-bLR8sbDJLITkWG7ozKm8l3RyieQ2Fpgix-beSYI/edit#gid=1021421956
+
+## 5. Modeling 
+Making using RandomForestRegression 
